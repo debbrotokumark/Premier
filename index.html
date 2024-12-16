@@ -4,45 +4,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Infinite Horizontal Scroll</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Premier</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-
-    <div id="profile-scrooler">
-        <div class="profile-container">
-            <div class="profile-box">
-                <img src="photo.jpg" alt="">
-                <h3>Debbroto</h3>
+    <nav>
+        <div class="logo">
+            <div class="top-part-logo">
+                <h1>
+                    Premier
+                </h1>
+                <p class="copyright">&copy</p>
             </div>
-            <div class="profile-box">
-                <img src="model1.jpg" alt="">
-                <h3>Liam Carter</h3>
-            </div>
-            <div class="profile-box">
-                <img src="model2.jpeg" alt="">
-                <h3>Sofia Patel</h3>
-            </div>
-            <div class="profile-box">
-                <img src="model3.jpg" alt="">
-                <h3>Ethan Johnson</h3>
-            </div>
-            <div class="profile-box">
-                <img src="model4.jpg" alt="">
-                <h3>Zara Ahmed</h3>
-            </div>
-            <div class="profile-box">
-                <img src="model5.jpeg" alt="">
-                <h3>Oliver Smith</h3>
-            </div>
-            <div class="profile-box">
-                <img src="model6.jpg" alt="">
-                <h3>Maya Lee</h3>
+            <p class="bottom-logo">Model management</p>
+        </div>
+        <ul id="nav-ul">
+            <li id="model-li"><a href="#">Models</a></li>
+            <li><a href="#">Woman/Man</a></li>
+            <li><a href="#">Agency/Blog/Information</a></li>
+            <li id="search"><i class="ri-search-eye-line"></i></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="videobox">
+            <video id="main-video" src="video.mp4" autoplay muted loop></video>
+            <div id="overlay">
+                <div id="overlay-top">
+                    <h1>Photography and films</h1>
+                    <div id="top-circle-div">
+                        <div class="rotate-div">
+                        </div>
+                        <p id="circle-content">01</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="overlay-bottom">
+                    <h4>Explore</h1>
+                        <i class="ri-arrow-right-line"></i>
+                </div>
             </div>
         </div>
-    </div>
+        <div id="profile-scrooler">
+            <div class="profile-container">
+                <div class="profile-box">
+                    <img src="photo.jpg" alt="">
+                    <h3>Debbroto</h3>
+                </div>
+                <div class="profile-box">
+                    <img src="model1.jpg" alt="">
+                    <h3>Liam Carter</h3>
+                </div>
+                <div class="profile-box">
+                    <img src="model2.jpeg" alt="">
+                    <h3>Sofia Patel</h3>
+                </div>
+                <div class="profile-box">
+                    <img src="model3.jpg" alt="">
+                    <h3>Ethan Johnson</h3>
+                </div>
+                <div class="profile-box">
+                    <img src="model4.jpg" alt="">
+                    <h3>Zara Ahmed</h3>
+                </div>
+                <div class="profile-box">
+                    <img src="model5.jpeg" alt="">
+                    <h3>Oliver Smith</h3>
+                </div>
+                <div class="profile-box">
+                    <img src="model6.jpg" alt="">
+                    <h3>Maya Lee</h3>
+                </div>
+            </div>
+        </div>
+        <div id="all-allphabet">
+            <span id="active-all">ALL</span>
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+            <span>D</span>
+            <span>E</span>
+            <span id="selected-allphabet">F</span>
+            <span>G</span>
+            <span class="ash-allphabet">H</span>
+            <span>I</span>
+            <span class="ash-allphabet">J</span>
+            <span>K</span>
+            <span>L</span>
+            <span>M</span>
+            <span class="ash-allphabet">N</span>
+            <span>O</span>
+            <span>P</span>
+            <span class="ash-allphabet">Q</span>
+            <span>R</span>
+            <span>S</span>
+            <span>T</span>
+            <span class="ash-allphabet">U</span>
+            <span>V</span>
+            <span>W</span>
+            <span>X</span>
+            <span>Y</span>
+            <span>Z</span>
+        </div>
 
+        <section id="main-section">
+            <div id="top-section">
+                <div id="topsec-leftbox" class="height-700">
+                    <img id="model-1-img" src="model1.jpg" alt="">
+                    <h1 id="model-1-title" class="Jaro-font">VOGUE / SHOT</h1>
+                </div>
+                <div id="topsec-rightbox">
+                    <img id="model-2-img" src="model2.jpeg" alt="">
+                    <div id="model2-details" class="width-50 all-center">
+                        <h3>Hannah Motler features in a fashion story by the lake for Vogue new shot</h3>
+                        <p>Such exposure to the fashion and
+                            beauty industries enabled her
+                            passion for branding and
+                            creativity to transition from one
+                            side of the camera to the other.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="section-3-model" class="height-700">
+                <div id="model-3-des">
+                    <div id="div-circle-text">
+                        <img src="circlelogo.png" alt="" srcset="">
+                    </div>
+                    <h5>Maison ARTC: memories and culture, the base of futuristic fashion awareness. Tilila Oulhaj look
+                    </h5>
+                </div>
+                <img id="model3-pic" src="model3.jpg" alt="">
+            </div>
+
+            <div class="section-full-model height-600">
+                <img src="model5.jpeg" alt="">
+                <h5>N</h5>
+            </div>
+            <div id="section-update">
+                <div id="update-1st-box" class="height-200">
+                    <h1 class="Jaro-font">Updates</h1>
+                </div>
+                <div class="height-200 img-left-right-anim display-flex">
+                    <div class="gender-type">
+                        <h4>MENS</h4>
+                        <h4>FASHINS
+                        </h4>
+                    </div>
+                    <img class="Update-Profilr-img" src="model1.jpg" alt="">
+                    <div class="update-type">
+                        <h2>Khadim & Tom Ford</h2>
+                        <h5>25TH MARCH 202</h5>
+                    </div>
+                </div>
+                <div class="height-200 img-left-right-anim display-flex">
+                    <div class="gender-type">
+                        <h4>MENS</h4>
+                        <h4>FASHINS
+                        </h4>
+                    </div>
+                    <img class="Update-Profilr-img" src="photo.jpg" alt="">
+                    <div class="update-type">
+                        <h2>Debbroto Kumar Karmokar</h2>
+                        <h5>07TH APRIL 2002</h5>
+                    </div>
+                </div>
+                <div class="height-200 img-left-right-anim display-flex">
+                    <div class="gender-type">
+                        <h4>SPECIAL</h4>
+                        <h4>VIEW</h4>
+                    </div>
+                    <img class="Update-Profilr-img" src="model3.jpg" alt="">
+                    <div class="update-type">
+                        <h2>Khadim & Tom Ford</h2>
+                        <h5>25TH MARCH 202</h5>
+                    </div>
+                </div>
+                <div class="height-200 img-left-right-anim display-flex">
+                    <div class="gender-type">
+                        <h4>MODELS</h4>
+                        <h4>TALK</h4>
+                    </div>
+                    <img class="Update-Profilr-img" src="model4.jpg" alt="">
+                    <div class="update-type">
+                        <h2>Jing for Wonderland</h2>
+                        <h5>14TH JANUARY 2018</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="sec-model-5" class="height-600 display-flex">
+                <img id="model-5-img" src="model5.jpeg" alt="">
+                <div id="right-box-model-5">
+
+                    <div id="top-right-model-5">
+                        <h1 id="model-5-title" class="Jaro-font">MOVIE SHOT</h1>
+                        <h3 id="model-5-details">London based Tom Mitchell has
+                            a distinct aesthetic within his
+                            photography & moving image</h3>
+                        <p>Tom's calm nature and eagerness to create; while still maintaining a high level of
+                            professionalism; has seen him slide into the fashion industry - photographing
+                            campaigns, look books, editorials, portraits, short films and TV commercials.</p>
+                    </div>
+                    <div id="bottom-right-model-5" class="display-flex">
+
+                        <img src="model3.jpg" alt="">
+                        <img src="model1.jpg" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section-full-model height-600">
+                <img id="sec-full-img" src="cover.jpg" alt="">
+                <h5>D</h5>
+            </div>
+            </div>
+            <div id="top-section">
+                <div id="topsec-leftbox" class="height-700">
+                    <img id="model-1-img" src="model1.jpg" alt="">
+                    <h1 id="model-1-title" class="Jaro-font">VOGUE / SHOT</h1>
+                </div>
+                <div id="topsec-rightbox">
+                    <img id="model-2-img" src="model2.jpeg" alt="">
+                    <div id="model2-details" class="width-50 all-center">
+                        <h3>Hannah Motler features in a fashion story by the lake for Vogue new shot</h3>
+                        <p>Such exposure to the fashion and
+                            beauty industries enabled her
+                            passion for branding and
+                            creativity to transition from one
+                            side of the camera to the other.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="marquee-text">
+            <h2>PREMIER MODELS 2024 DEVELOPED BY DEBBROTO.</h2>
+            <h2>PREMIER MODELS 2024 DEVELOPED BY DEBBROTO.</h2>
+            <h2>PREMIER MODELS 2024 DEVELOPED BY DEBBROTO.</h2>
+        </div>
+        <div id="blog" class="display-flex">
+            <h1>BLOG</h1>
+            <div class="blog-1">
+                <p>Jack Thompson features in a story
+                    crossing bridges for ID Magazine shot
+                    by Maxwell Tomlinson, styled by Louise
+                    Prier Tisdall.</p>
+                <img src="model6.jpg" alt="">
+            </div>
+            <div class="blog-2">
+                <p>As London Fashion Week has come to
+                    an end, we've made a list of our fresh new
+                    faces & showgirls who have hard walked for
+                    some of the biggest designers.</p>
+                <img src="model5.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-box">
+            <div id="left-footer">
+                <div id="left-footer-left">
+                    <div id="botom-logo" class="logo">
+                        <div class="top-part-logo">
+                            <h1>
+                                Premier
+                            </h1>
+                            <p class="copyright">&copy</p>
+                        </div>
+                        <p class="bottom-logo">Model management</p>
+                    </div>
+                </div>
+                <div id="left-footer-right">
+                    <h5>Models</h5>
+                </div>
+            </div>
+            <div id="center-footer">
+                <h3>Women/Man</h3>
+            </div>
+            <div id="right-footer">
+                <div id="right-top-footer">
+                    <h3>Agency /Blog / Information / Contact us</h3>
+                </div>
+                <div id="right-bottom-footer">
+                    <div id="right-bottom-footer-logo">
+
+                        <ul>
+                            <li><a href=""> <i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-github"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href=""> <i class="fa-brands fa-telegram"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <div id="right-bottom-footer-text">
+                        <p>&copy All content Copyright</p>
+                        <h5>PREMIER MODELS Ins. 1981-2020 /or their respective owners where indicated</h5>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
 
 </body>
 <script src="script.js"></script>
